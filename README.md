@@ -32,7 +32,7 @@ If your raw HTML is coming from a secure source (such as Craft) and you have "Pu
 ```
 
 ### Overide vscode css style settings with stylelint
-If vscode is complaining about `at-rule or selector expectedcss(css-ruleorselectorexpected)` or `semi-colon expectedcss(css-semicolonexpected)`, you need to adjust your workspace settings to allow for the stylelint packge to validate css rather than vscode. To do that, add the following to your workspaces `settings.json` file:
+If vscode is complaining about `at-rule or selector expectedcss(css-ruleorselectorexpected)` or `semi-colon expectedcss(css-semicolonexpected)` while using your tailwind `@apply` rules, you need to adjust your workspace settings to allow for the stylelint packge to validate css rather than vscode. To do that, add the following to your workspaces `settings.json` file:
 
 ```
   /**
