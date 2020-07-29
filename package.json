@@ -34,6 +34,24 @@
         "jest": "^24.1.0",
         "node-fetch": "^2.6.0",
         "prettier": "^1.19.1",
-        "vue-jest": "^4.0.0-0"
+        "vue-jest": "^4.0.0-0",
+        "stylelint-config-recommended": "^3.0.0"
+    },
+    "stylelint": {
+        "extends": "stylelint-config-recommended",
+        "rules": {
+            "at-rule-no-unknown": [
+                true,
+                {
+                    "ignoreAtRules": [
+                        "tailwind",
+                        "apply",
+                        "responsive",
+                        "variants",
+                        "screen"
+                    ]
+                }
+            ]
+        }
     }
 }
