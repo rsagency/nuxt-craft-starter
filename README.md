@@ -1,4 +1,4 @@
-# rsagency-nuxt
+# nuxt-craft-starter
 
 > A starter for projects that require Nuxt JS + Craft CMS + Tailwind CSS
 
