@@ -9,8 +9,8 @@
 ## Features
 
 - [@nuxtjs/axios](https://github.com/nuxt-community/axios-module) for fetching sitemap, metadata and navigation structure from Craft CMS.
-  - SEOmatic and Route Map Craft CMS plugins required for sitemap and metadata. 
-  - Navigation plugin for Craft CMS used for navigation structure.
+  - [SEOmatic](https://nystudio107.com/docs/seomatic) and [Route Map](https://nystudio107.com/docs/route-map) Craft CMS plugins required for sitemap and metadata. 
+  - [Navigation](https://verbb.io/craft-plugins/navigation/docs/get-started/installation-setup) plugin for Craft CMS used for navigation structure.
   - Custom `craftRouting` middleware configured to check against sitemap from Craft CMS when pages don't exist.
 - [@nuxtjs/apollo](https://github.com/nuxt-community/apollo-module) for fetching GraphQL data and configured for live preview mode.
 - [@nuxtjs/proxy](https://github.com/nuxt-community/proxy-module) included for adding proxies for API endpoints
