@@ -2,6 +2,22 @@
 
 > A starter for projects that require Nuxt JS + Craft CMS + Tailwind CSS
 
+<p align="center">
+  <img src="https://www.rockitscienceagency.com/img/images/nuxt-craft-starter.png" />
+</p>
+
+## Features
+
+- [@nuxtjs/axios](https://github.com/nuxt-community/axios-module) for fetching sitemap, metadata and navigation structure from Craft CMS.
+  - SEOmatic and Route Map Craft CMS plugins required for sitemap and metadata. Navigation plugin for Craft CMS used for navigation structure.
+  - Custom `craftRouting` middleware configured to check against sitemap from Craft CMS when pages don't exist.
+- [@nuxtjs/apollo](https://github.com/nuxt-community/apollo-module) for fetching GraphQL data and configured for live preview mode.
+- [@nuxtjs/proxy](https://github.com/nuxt-community/proxy-module) included for adding proxies for API endpoints
+- [@nuxt-community/fontawesome-module](https://github.com/nuxt-community/fontawesome-module) to easily add fontawesome icons.
+- [@nuxt-community/svg-module](https://github.com/nuxt-community/svg-module) for loading SVG's into Nuxt pages.
+- [tailwind module](https://github.com/nuxt-community/tailwindcss-module) added with Tailwind CSS (version 2).
+- [lazysizes](https://github.com/aFarkas/lazysizes) added and configured to work within Nuxt.
+
 ## Additional Notes
 ### v-html
 If your raw HTML is coming from a secure source (such as Craft) and you have "Purify HTML" set on your redactor fields, you may add this setting to you `eslintrc.js` file to allow for using the `v-html` directive and to avoid eslint complaining about XSS attacks:
