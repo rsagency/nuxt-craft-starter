@@ -13,6 +13,7 @@
   - [Navigation](https://verbb.io/craft-plugins/navigation/docs/get-started/installation-setup) plugin for Craft CMS used for navigation structure.
   - Custom `craftRouting` middleware configured to check against sitemap from Craft CMS when pages don't exist.
 - [@nuxtjs/apollo](https://github.com/nuxt-community/apollo-module) for fetching GraphQL data and configured for live preview mode.
+  - `schemaQuery` file configured for fetching Craft CMS GQL fragment types for apollo. (simply run `npm run graphql-schema`)
 - [@nuxtjs/proxy](https://github.com/nuxt-community/proxy-module) included for adding proxies for API endpoints
 - [@nuxt-community/fontawesome-module](https://github.com/nuxt-community/fontawesome-module) to easily add fontawesome icons.
 - [@nuxt-community/svg-module](https://github.com/nuxt-community/svg-module) for loading SVG's into Nuxt pages.
