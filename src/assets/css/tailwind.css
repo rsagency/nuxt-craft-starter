@@ -1,0 +1,18 @@
+/* ./assets/css/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set base styles here: heading, anchor, p tags, etc. */
+@layer base {
+    h1 {
+        @apply text-4xl uppercase font-sans mb-3 font-bold;
+    }
+     @screen md {
+        h1 {
+            @apply text-6xl;
+        }
+    }
+}
+/* Set new utility classes here: buttons/etc. */
+@layer utilities {}
