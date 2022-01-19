@@ -1,15 +1,19 @@
+/* eslint-disable no-unused-vars */
 /*
- ** For extending webpack config here
+ ** You can extend webpack config here
  */
+
+const path = require('path')
 export default {
-    publicPath: './.nuxt/dist/',
-    /*
-     ** This is the goods for lazysizes
-     */
-    extend(config, { isClient, loaders: { vue } }) {
-        if (isClient) {
-            vue.transformAssetUrls.img = ['data-src', 'src']
-            vue.transformAssetUrls.source = ['data-srcset', 'srcset']
-        }
+    extend(config, ctx) {
+        config.module.rules.push({
+            enforce: 'pre',
+            test: /\.(js|vue)$/,
+            loader: 'eslint-loader',
+            exclude: /(node_modules)/,
+            options: {
+                fix: true,
+            },
+        })
     },
 }

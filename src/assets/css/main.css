@@ -1,7 +1,6 @@
-/* ./assets/css/tailwind.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 /* Set base styles here: heading, anchor, p tags, etc. */
 @layer base {

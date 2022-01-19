@@ -1,11 +1,7 @@
-import axios from './modules/axios'
-import apollo from './modules/apollo'
-import proxy from './modules/proxy'
-import fontawesome from './modules/fontawesome'
+import seomatic from './modules/seomatic'
 export default [
-    ['@nuxtjs/axios', axios],
-    ['@nuxtjs/apollo', apollo],
-    ['@nuxtjs/proxy', proxy],
-    ['nuxt-fontawesome', fontawesome],
-    '@nuxtjs/svg',
+    '@nuxtjs/axios',
+    '@nuxt/http',
+    'nuxt-webfontloader',
+    ['nuxt-seomatic-meta', seomatic],
 ]

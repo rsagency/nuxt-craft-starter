@@ -1,2 +1,2 @@
 // Add global css file paths here
-export default ['@/stylesheets/root']
+export default ['@/assets/css/main.css']

@@ -2,7 +2,7 @@
  ** Plugins to load before mounting the App
  */
 export default [
-    '~/plugins/axios-config.js',
-    '~/plugins/vue-inject.js',
-    '~/plugins/lazysizes.client.js',
+    '~/plugins/craft.js',
+    '~/plugins/preview.client.js',
+    '~/plugins/print-query.js',
 ]

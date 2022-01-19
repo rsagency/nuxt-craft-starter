@@ -1,51 +1,83 @@
 {
-    "name": "nuxt-craft-starter",
-    "version": "1.0.0",
-    "description": "A starter for projects that require Nuxt JS + Craft CMS + Tailwind CSS",
-    "author": "rsagency",
-    "private": false,
-    "scripts": {
-        "dev": "nuxt",
-        "build": "nuxt build",
-        "start": "nuxt start",
-        "generate": "nuxt generate",
-        "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-        "test": "jest",
-        "graphql-schema": "node schemaQuery.js"
-    },
-    "dependencies": {
-        "@nuxtjs/apollo": "^4.0.0-rc.18",
-        "@nuxtjs/axios": "^5.13.1",
-        "@nuxtjs/proxy": "^2.1.0",
-        "axios-extensions": "^3.1.3",
-        "graphql-tag": "^2.10.1",
-        "lazysizes": "^5.2.2",
-        "nuxt": "^2.15.3",
-        "nuxt-fontawesome": "^0.4.0"
-    },
-    "devDependencies": {
-        "@nuxtjs/svg": "^0.1.12",
-        "@nuxtjs/tailwindcss": "^4.0.2",
-        "@tailwindcss/postcss7-compat": "^2.0.4",
-        "@vue/test-utils": "^1.0.0-beta.27",
-        "apollo-cache-inmemory": "^1.6.6",
-        "autoprefixer": "^9.8.6",
-        "babel-eslint": "^10.1.0",
-        "babel-jest": "^24.1.0",
-        "eslint": "^6.8.0",
-        "eslint-config-prettier": "^6.15.0",
-        "eslint-loader": "^4.0.2",
-        "eslint-plugin-nuxt": ">=0.4.2",
-        "eslint-plugin-prettier": "^3.3.1",
-        "eslint-plugin-vue": "^7.8.0",
-        "jest": "^24.1.0",
-        "node-fetch": "^2.6.0",
-        "node-sass": "^4.14.1",
-        "postcss": "^7.0.35",
-        "prettier": "^1.19.1",
-        "sass-loader": "^8.0.2",
-        "stylelint-config-recommended": "^3.0.0",
-        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4",
-        "vue-jest": "^4.0.0-0"
+  "name": "nuxt-craft-starter",
+  "version": "1.0.0",
+  "description": "A starter for projects that require Nuxt JS + Craft CMS + Tailwind CSS",
+  "author": "rsagency",
+  "private": false,
+  "scripts": {
+    "dev": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js dev",
+    "build": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js build",
+    "start": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js start",
+    "generate": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "graphql-schema": "node schemaQuery.js"
+  },
+  "dependencies": {
+    "@braid/vue-formulate": "^2.5.2",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@nuxt/http": "^0.6.4",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/fontawesome": "^1.1.2",
+    "graphql": "^16.1.0",
+    "graphql-tag": "^2.10.1",
+    "gsap": "npm:@gsap/shockingly@^3.8.0",
+    "nuxt": "^2.15.8",
+    "lozad": "^1.16.0",
+    "nuxt-compress": "^5.0.0",
+    "nuxt-seomatic-meta": "^0.2.2",
+    "nuxt-webfontloader": "^1.1.0"
+  },
+  "devDependencies": {
+    "@nuxt/postcss8": "^1.1.3",
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/svg": "^0.3.0",
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "@tailwindcss/typography": "^0.4.1",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "autoprefixer": "^10.4.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.8.0",
+    "node-fetch": "^2.6.2",
+    "node-sass": "^4.14.1",
+    "nuxt-gsap-module": "^1.6.0",
+    "postcss": "^8.4.5",
+    "prettier": "^1.19.1",
+    "sass-loader": "^10.1.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "tailwindcss": "^2.2.19"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-recommended",
+    "rules": {
+      "at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": [
+            "tailwind",
+            "apply",
+            "responsive",
+            "variants",
+            "screen"
+          ]
+        }
+      ],
+      "selector-pseudo-element-no-unknown": [
+        true,
+        {
+          "ignorePseudoElements": [
+            "v-deep"
+          ]
+        }
+      ],
+      "declaration-block-trailing-semicolon": null,
+      "no-descending-specificity": null
     }
+  }
 }

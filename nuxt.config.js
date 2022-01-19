@@ -1,18 +1,19 @@
 // Import base config
 import buildModules from './config/buildModules'
 import head from './config/head'
+import css from './config/css'
 import plugins from './config/plugins'
+import server from './config/server'
 import modules from './config/modules'
 import build from './config/build'
-import router from './config/router'
-import serverMiddleware from './config/serverMiddleware'
+import generate from './config/generate'
 import publicRuntimeConfig from './config/publicRuntimeConfig'
 
 const options = {
     rootDir: './',
     srcDir: 'src',
     target: 'static',
-    ssr: true,
+    telemetry: false,
 }
 
 export default {
@@ -20,11 +21,12 @@ export default {
     loading: false,
     components: true,
     head,
+    css,
+    server,
+    build,
+    generate,
+    modules,
     buildModules,
     plugins,
-    modules,
-    build,
-    router,
-    serverMiddleware,
     publicRuntimeConfig,
 }

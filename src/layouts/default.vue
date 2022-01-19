@@ -1,10 +1,8 @@
 <template>
     <div class="h-full">
+        <div class="h-full fixed inset-0 z-0"></div>
         <div
-            class="bg-layout bg-cover bg-no-repeat h-full fixed inset-0 z-0"
-        ></div>
-        <div
-            class="relative flex flex-wrap items-center justify-center text-white w-full h-full  md:bg-gray-800 md:bg-opacity-70 z-10"
+            class="relative flex flex-wrap items-center justify-center text-white w-full h-full bg-green-800"
         >
             <div class="container">
                 <nuxt />
