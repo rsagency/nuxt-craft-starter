@@ -1,24 +1,21 @@
 # nuxt-craft-starter
 
-> A starter for projects that require Nuxt JS + Craft CMS + Tailwind CSS
+> Boilerplate for projects that require Nuxt JS + Craft CMS + Tailwind CSS + Netlify
 
 <p align="center">
   <img src="https://www.rockitscienceagency.com/img/images/nuxt-craft-starter.png" />
 </p>
 
 ## Features
-
-- [@nuxtjs/axios](https://github.com/nuxt-community/axios-module) for fetching sitemap, metadata and navigation structure from Craft CMS.
-  - [SEOmatic](https://nystudio107.com/docs/seomatic) and [Route Map](https://nystudio107.com/docs/route-map) Craft CMS plugins required for sitemap and metadata. 
-  - [Navigation](https://verbb.io/craft-plugins/navigation/docs/get-started/installation-setup) plugin for Craft CMS used for navigation structure.
-  - Custom `craftRouting` middleware configured to check against sitemap from Craft CMS when pages don't exist.
-- [@nuxtjs/apollo](https://github.com/nuxt-community/apollo-module) for fetching GraphQL data and configured for live preview mode.
-  - `schemaQuery` file configured for fetching Craft CMS GQL fragment types for apollo. (simply run `npm run graphql-schema`)
-- [@nuxtjs/proxy](https://github.com/nuxt-community/proxy-module) included for adding proxies for API endpoints
-- [@nuxt-community/fontawesome-module](https://github.com/nuxt-community/fontawesome-module) to easily add fontawesome icons.
+- [@braid/vue-formulate](https://github.com/wearebraid/vue-formulate) for ease of building forms.
+- [@nuxtjs/fontawesome](https://github.com/nuxt-community/fontawesome-module) for adding icons.
+- [graphql-tag](https://github.com/apollographql/graphql-tag) for writing graphql queries and syntax highlighing.
+- [nuxt-gsap-module](https://github.com/ivodolenc/nuxt-gsap-module) for ease of adding sweet transitions and animations.
+- [lozad](https://github.com/ApoorvSaxena/lozad.js) for image lazyloading.
+- [@nuxt/http](https://github.com/nuxt/http) for making asynchronus requests to fetch data from Craft and configured to enable Live Preview.
+- [nuxt-seomatic-meta](https://github.com/ben-rogerson/nuxt-seomatic-meta) configured to pull SEO meta data from Craft's [SEOmatic plugin](https://plugins.craftcms.com/seomatic)
 - [@nuxt-community/svg-module](https://github.com/nuxt-community/svg-module) for loading SVG's into Nuxt pages.
 - [tailwind module](https://github.com/nuxt-community/tailwindcss-module) added with Tailwind CSS (version 2).
-- [lazysizes](https://github.com/aFarkas/lazysizes) added and configured to work within Nuxt.
 
 ## Additional Notes
 ### v-html
