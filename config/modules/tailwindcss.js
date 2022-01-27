@@ -1,7 +1,7 @@
 import { resolve } from 'path'
 
 export default {
-    jit: true,
+    mode: 'jit',
     configPath: resolve('./tailwind.config.js'),
     content: [
         './components/**/*.{js,vue,ts}',
