@@ -2,8 +2,6 @@
 /*
  ** You can extend webpack config here
  */
-
-const path = require('path')
 export default {
     extend(config, ctx) {
         config.module.rules.push({
@@ -15,5 +13,15 @@ export default {
                 fix: true,
             },
         })
+    },
+    postcss: {
+        plugins: {
+            'postcss-import': {},
+            'tailwindcss/nesting': {},
+            tailwindcss: {
+                config: './tailwind.config.js',
+            },
+            autoprefixer: {},
+        },
     },
 }

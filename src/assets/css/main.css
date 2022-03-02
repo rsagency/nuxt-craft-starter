@@ -1,11 +1,11 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Set base styles here: heading, anchor, p tags, etc. */
 @layer base {
     h1 {
-        @apply text-4xl uppercase font-sans mb-3 font-bold;
+        @apply mb-3 font-sans text-4xl font-bold uppercase;
     }
      @screen md {
         h1 {
