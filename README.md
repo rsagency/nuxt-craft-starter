@@ -1,6 +1,6 @@
 # nuxt-craft-starter
 
-> Boilerplate for projects that require Nuxt JS + Craft CMS + Tailwind CSS + Netlify
+> Boilerplate for projects that require Nuxt JS + Craft CMS + Tailwind CSS
 
 <p align="center">
   <img src="https://www.rockitscienceagency.com/img/images/nuxt-craft-starter.png" />
@@ -11,11 +11,11 @@
 - [@nuxtjs/fontawesome](https://github.com/nuxt-community/fontawesome-module) for adding icons.
 - [graphql-tag](https://github.com/apollographql/graphql-tag) for writing graphql queries and syntax highlighing.
 - [nuxt-gsap-module](https://github.com/ivodolenc/nuxt-gsap-module) for ease of adding sweet transitions and animations.
-- [lozad](https://github.com/ApoorvSaxena/lozad.js) for image lazyloading.
+- [Vanilla Lazyload](https://github.com/verlok/vanilla-lazyload) for image lazyloading.
 - [@nuxt/http](https://github.com/nuxt/http) for making asynchronus requests to fetch data from Craft and configured to enable Live Preview.
 - [nuxt-seomatic-meta](https://github.com/ben-rogerson/nuxt-seomatic-meta) configured to pull SEO meta data from Craft's [SEOmatic plugin](https://plugins.craftcms.com/seomatic)
 - [@nuxt-community/svg-module](https://github.com/nuxt-community/svg-module) for loading SVG's into Nuxt pages.
-- [tailwind module](https://github.com/nuxt-community/tailwindcss-module) added with Tailwind CSS (version 2).
+- Tailwind CSS (version ^3.1.4).
 
 ## Additional Notes
 ### v-html
