@@ -3,6 +3,7 @@
  ** You can extend webpack config here
  */
 export default {
+    transpile: ['lodash-es'],
     extend(config, ctx) {
         config.module.rules.push({
             enforce: 'pre',

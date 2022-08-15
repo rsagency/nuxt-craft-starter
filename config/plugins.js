@@ -5,4 +5,5 @@ export default [
     '~/plugins/craft.js',
     '~/plugins/preview.client.js',
     '~/plugins/print-query.js',
+    '~/plugins/lazyloader.client.js',
 ]
