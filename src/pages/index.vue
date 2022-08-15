@@ -1,7 +1,7 @@
 <template>
     <div class="h-full">
         <div
-            class="relative flex flex-wrap items-center justify-center text-white w-full h-full"
+            class="relative flex flex-wrap items-center justify-center w-full h-full text-white"
         >
             <section class="p-10">
                 <div class="container">
@@ -17,12 +17,12 @@
                             <h1>
                                 nuxt-craft-starter
                             </h1>
-                            <p class="text-xl mb-8">
+                            <p class="mb-8 text-xl">
                                 A starter for projects that require Nuxt JS +
                                 Craft CMS + Tailwind CSS
                             </p>
                             <hr
-                                class="border border-divider border-gray-400 w-full mx-auto"
+                                class="w-full mx-auto border border-gray-400 border-divider"
                             />
                             <div class="w-full pt-10">
                                 <a
